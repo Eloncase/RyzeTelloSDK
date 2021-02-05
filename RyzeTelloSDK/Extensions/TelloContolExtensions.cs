@@ -85,14 +85,5 @@ namespace RyzeTelloSDK.Extensions
         }
 
         // ToDo: Jump
-
-        public static Task<bool> RC(this ITelloClient tello, int leftright, int forwardbackward, int updown, int yaw)
-        {
-            CommandConstraints.CheckRC(leftright);
-            CommandConstraints.CheckRC(forwardbackward);
-            CommandConstraints.CheckRC(updown);
-            CommandConstraints.CheckRC(yaw);
-            return tello.SendAction($"rc {leftright} {forwardbackward} {updown} {yaw}");
-        }
     }
 }

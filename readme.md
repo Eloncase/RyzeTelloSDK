@@ -15,7 +15,7 @@ I wanted to make a small and simple wrapper that covers only UDP connections and
 
 * UDP connection can be handled better
     * Tello sends response after completing an action. So the library ends up with queuing commands and hangs until they are all proccessed (with the exception of **rc** commands)
-* Library is missing **read** and **set** commands
+* Library is missing commands related to mission pad
 * Documentation
 
 # TelloTestApp
